@@ -12,7 +12,9 @@
 		879CE7A520B033C6007039E3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 879CE7A320B033C6007039E3 /* Main.storyboard */; };
 		879CE7A720B033C8007039E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 879CE7A620B033C8007039E3 /* Assets.xcassets */; };
 		879CE7AA20B033C8007039E3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 879CE7A820B033C8007039E3 /* LaunchScreen.storyboard */; };
-		879CE7B520B033C8007039E3 /* IntroToUnitTestsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 879CE7B420B033C8007039E3 /* IntroToUnitTestsTests.swift */; };
+		879CE7C020B03840007039E3 /* ViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 879CE7BF20B03840007039E3 /* ViewControllerTests.swift */; };
+		879CE7C320B04510007039E3 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 879CE7C220B04510007039E3 /* Person.swift */; };
+		879CE7C720B0458C007039E3 /* PersonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 879CE7C620B0458C007039E3 /* PersonTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,8 +36,10 @@
 		879CE7A920B033C8007039E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		879CE7AB20B033C8007039E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		879CE7B020B033C8007039E3 /* IntroToUnitTestsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IntroToUnitTestsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		879CE7B420B033C8007039E3 /* IntroToUnitTestsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroToUnitTestsTests.swift; sourceTree = "<group>"; };
 		879CE7B620B033C8007039E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		879CE7BF20B03840007039E3 /* ViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerTests.swift; sourceTree = "<group>"; };
+		879CE7C220B04510007039E3 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		879CE7C620B0458C007039E3 /* PersonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +81,7 @@
 		879CE79E20B033C6007039E3 /* IntroToUnitTests */ = {
 			isa = PBXGroup;
 			children = (
+				879CE7C120B04501007039E3 /* Model */,
 				879CE79F20B033C6007039E3 /* AppDelegate.swift */,
 				879CE7A120B033C6007039E3 /* ViewController.swift */,
 				879CE7A320B033C6007039E3 /* Main.storyboard */,
@@ -90,10 +95,19 @@
 		879CE7B320B033C8007039E3 /* IntroToUnitTestsTests */ = {
 			isa = PBXGroup;
 			children = (
-				879CE7B420B033C8007039E3 /* IntroToUnitTestsTests.swift */,
 				879CE7B620B033C8007039E3 /* Info.plist */,
+				879CE7BF20B03840007039E3 /* ViewControllerTests.swift */,
+				879CE7C620B0458C007039E3 /* PersonTests.swift */,
 			);
 			path = IntroToUnitTestsTests;
+			sourceTree = "<group>";
+		};
+		879CE7C120B04501007039E3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				879CE7C220B04510007039E3 /* Person.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,6 +163,7 @@
 					};
 					879CE7AF20B033C8007039E3 = {
 						CreatedOnToolsVersion = 9.3.1;
+						LastSwiftMigration = 0930;
 						TestTargetID = 879CE79B20B033C6007039E3;
 					};
 				};
@@ -197,6 +212,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				879CE7C320B04510007039E3 /* Person.swift in Sources */,
 				879CE7A220B033C6007039E3 /* ViewController.swift in Sources */,
 				879CE7A020B033C6007039E3 /* AppDelegate.swift in Sources */,
 			);
@@ -206,7 +222,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				879CE7B520B033C8007039E3 /* IntroToUnitTestsTests.swift in Sources */,
+				879CE7C720B0458C007039E3 /* PersonTests.swift in Sources */,
+				879CE7C020B03840007039E3 /* ViewControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -395,6 +412,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = JMYF9P9VY4;
 				INFOPLIST_FILE = IntroToUnitTestsTests/Info.plist;
@@ -405,6 +423,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.akberovapps.IntroToUnitTestsTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IntroToUnitTests.app/IntroToUnitTests";
@@ -416,6 +435,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = JMYF9P9VY4;
 				INFOPLIST_FILE = IntroToUnitTestsTests/Info.plist;

@@ -1,5 +1,5 @@
 //
-//  IntroToUnitTestsTests.swift
+//  PersonTests.swift
 //  IntroToUnitTestsTests
 //
 //  Created by Руслан Акберов on 19.05.2018.
@@ -9,7 +9,7 @@
 import XCTest
 @testable import IntroToUnitTests
 
-class IntroToUnitTestsTests: XCTestCase {
+class PersonTests: XCTestCase {
     
     override func setUp() {
         super.setUp()
@@ -21,16 +21,33 @@ class IntroToUnitTestsTests: XCTestCase {
         super.tearDown()
     }
     
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    func testInitPersonName() {
+        let person = Person(name: "John Smith")
+        XCTAssertEqual(person.name, "John Smith")
     }
     
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
+    func testInitPersonHairColor() {
+        let person = Person(name: "Brock Lesnar", hairColor: "Blond")
+        XCTAssertEqual(person.name, "Brock Lesnar")
+        XCTAssertEqual(person.hairColor, "Blond")
+
     }
     
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
