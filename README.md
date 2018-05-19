@@ -9,8 +9,8 @@ In this project I try to explore different approaches for writing unit test.
 ```
 * To create test add **test** keyword before the test function name.
 ``` swift
-    func testIsNumberEven() {
-    }
+func testIsNumberEven() {
+}
 ```
 
 ## Start tests
